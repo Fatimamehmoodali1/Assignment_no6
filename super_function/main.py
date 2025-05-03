@@ -1,0 +1,16 @@
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Teacher(Person):
+    def __init__(self, name, subject):
+        super().__init__(name)  # Calling base class constructor
+        self.subject = subject
+
+    def display(self):
+        print(f"Name: {self.name}")
+        print(f"Subject: {self.subject}")
+
+# Example usage:
+teacher1 = Teacher("Miss Fatima", "Mathematics")
+teacher1.display()
